@@ -3,6 +3,8 @@ const YES_NO = [
   { value: 'nao', label: 'Não' },
 ];
 
+const EMAIL_API_URL = String(globalThis.FORM_API_URL ?? '').trim() || '/api/send-form';
+
 const HEALTH_CONDITIONS = [
   'Diabetes', 'Hipertensão', 'Problemas cardíacos', 'Problemas circulatórios',
   'Trombose', 'Varizes', 'Epilepsia', 'Doença autoimune',
@@ -325,7 +327,7 @@ form.addEventListener('submit', async (event) => {
   clearError();
   render();
   try {
-    const response = await fetch('/api/send-form', {
+    const response = await fetch(EMAIL_API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ values: state.values }),
