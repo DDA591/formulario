@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ficha digital de anamnese da Clau Estética." />
+    <title>Clau Estética | Ficha Digital</title>
+    <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="site-shell">
+      <header class="brand-header">
+        <img class="brand-mark" src="clau-symbol.png" alt="Símbolo Clau Estética" />
+        <div class="brand-name">Clau Estética</div>
+        <div class="brand-role">ENFERMEIRA</div>
+        <p>Ficha Digital de Anamnese e Declaração de Ciência</p>
+      </header>
+
+      <section class="form-area" aria-labelledby="form-title">
+        <form id="anamnese-form" class="form-card" novalidate>
+          <div class="progress-zone">
+            <div class="progress-track" aria-hidden="true"><div id="progress-fill" class="progress-fill"></div></div>
+            <span id="step-label"></span>
+          </div>
+          <div class="form-content">
+            <h1 id="form-title"></h1>
+            <div class="section-rule"></div>
+            <div id="form-fields"></div>
+          </div>
+          <p id="form-error" class="form-error" role="alert" hidden></p>
+          <footer id="form-actions" class="form-actions"></footer>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

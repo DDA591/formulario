@@ -1,0 +1,13 @@
+/node_modules
+.next/
+.vinext/
+next-env.d.ts
+.DS_Store
+npm-debug.log*
+.env*
+/dist/
+/.wrangler/
+/.wrangler-local/
+/tmp/
+/outputs/
+/work/
